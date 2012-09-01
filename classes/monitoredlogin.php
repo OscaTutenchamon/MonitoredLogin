@@ -15,8 +15,8 @@ namespace MonitoredLogin;
 class MonitoredLoginTooSmallDelay extends \FuelException {}
 class MonitoredLoginIpBlocked extends \FuelException {}
 class MonitoredLoginUserBlocked extends \FuelException {}
-class MonitoredLoginIpLimitHit extends \FuelException {}
-class MonitoredLoginUserLimitHit extends \FuelException {}
+class MonitoredLoginIpLimitHit extends MonitoredLoginIpBlocked {}
+class MonitoredLoginUserLimitHit extends MonitoredLoginUserBlocked {}
 
 /**
  * MonitoredLogin
